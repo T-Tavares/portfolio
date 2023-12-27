@@ -1,0 +1,67 @@
+/* --------------------------- IMPORTS ---------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,400&display=swap');
+
+:root {
+    /* --------------------- CSS COLOR VARIABLES ---------------------- */
+
+    --dark-blue-black: #050518;
+
+    --light-gray: #f0f0f0;
+    --mid-gray: #d0d0d0;
+    --dark-gray: #808080;
+    --extra-dark-gray: #333;
+    --white: #ffffff;
+
+    --accent-blue: #003366;
+
+    /* ---------------------- CSS FONT VARIABLES ---------------------- */
+
+    --font: 'Source Code Pro', monospace;
+    --text-size: 18px;
+    --text-weight: 200;
+
+    /* ------------------ CSS TRANSITIONS VARIABLES ------------------- */
+
+    --transition-short: 200ms ease-in-out;
+    --transition-mid: 300ms ease-in-out;
+    --transition-long: 400ms ease-in-out;
+}
+
+/* -------------------------- CSS RESET --------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/* CSS GENERAL STYLING */
+
+body {
+    padding: 0 15%;
+}
+/* CSS THEME SETUP */
+
+body,
+button {
+    cursor: cell;
+    background: var(--dark-blue-black);
+    color: var(--mid-gray);
+    font-family: var(--font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+}
+button {
+    font-family: var(--font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+}
