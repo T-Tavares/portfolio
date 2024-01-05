@@ -1,0 +1,7 @@
+#landing {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    min-height: 100%;
+    flex-direction: column;
+}

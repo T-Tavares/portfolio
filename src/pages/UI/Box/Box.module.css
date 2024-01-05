@@ -1,0 +1,46 @@
+.box {
+    position: relative;
+    border: 1px solid var(--extra-light-blue-black);
+    border-radius: 0.5rem;
+}
+
+.boxTitle {
+    position: absolute;
+    top: -1.2rem;
+    left: 1.5rem;
+
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    font-weight: 300;
+    padding: 0 0.8rem;
+    background-color: var(--dark-blue-black);
+}
+.boxExpandBtn {
+    position: absolute;
+    top: -1.5rem;
+    right: 3rem;
+    border-radius: 5px;
+
+    color: var(--light-gray);
+    text-decoration: none;
+
+    background-color: var(--mid-blue-black);
+    border: 1px solid var(--extra-light-blue-black);
+
+    padding: 0.5rem 16px;
+    transition-property: font-weight border background-color;
+    transition: 200ms ease-in-out;
+}
+.boxExpandBtn:hover {
+    font-weight: 300;
+    border: 1px solid var(--dark-gray);
+    background-color: var(--light-blue-black);
+}
+/* BOX TYPES */
+
+.card {
+    background-color: var(--mid-blue-black);
+}
+.section {
+    padding: 3rem;
+}

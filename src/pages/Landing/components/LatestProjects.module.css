@@ -1,0 +1,55 @@
+/*  SECTION CONTAINER  */
+
+.latestProjectsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* CARD CONTAINER */
+
+.projectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* CARD BUTTONS  */
+
+.buttonContainer {
+    display: flex;
+}
+.buttonContainer a {
+    padding: 0.4rem 1rem;
+    display: flex;
+    color: var(--light-gray);
+    text-decoration: none;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    background-color: var(--light-blue-black);
+    border: 1px solid var(--extra-light-blue-black);
+    border-radius: 0.2rem;
+    transition-property: border background-color font-weight;
+    transition: 200ms ease-in-out;
+}
+
+.buttonContainer a:hover {
+    border: 1px solid var(--dark-gray);
+    font-weight: 300;
+    background-color: var(--extra-light-blue-black);
+}
+/* CARD TITLE */
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+/* CARD CONTENT */
+.p {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}

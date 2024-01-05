@@ -1,0 +1,97 @@
+/* ------------------- HOME LANDING CONTENT BOX ------------------- */
+
+.landingContent {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0 5vw;
+    height: calc(100vh - 350px);
+    margin-bottom: 200px;
+    width: 100%;
+}
+
+/* ---------------------- HOME LANDING TEXT ----------------------- */
+
+.landingText p {
+    font-size: max(2vw, 2rem);
+}
+
+.landingText p:last-child {
+    text-align: end;
+}
+
+.landingText h1 {
+    text-align: center;
+    font-size: max(5vw, 4.3rem);
+    font-variant: small-caps;
+    font-weight: 500;
+}
+.landingText h1 span {
+    color: var(--accent-blue-light);
+}
+.landingText h1 span::selection {
+    background-color: var(--light-gray);
+    color: var(--accent-blue);
+}
+
+/* ------------------ HOME LANDING PROFILE IMAGE ------------------ */
+
+.landingImage img {
+    --p-diameter: 20vw;
+    --min-diameter: 280px;
+
+    height: min(var(--p-diameter), var(--min-diameter));
+    width: min(var(--p-diameter), var(--min-diameter));
+
+    transform: rotate(25deg);
+
+    filter: sepia(1) hue-rotate(150deg) saturate(0.3) contrast(0.9);
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* --------------- HOME LANDING SCROLL DOWN BUTTON ---------------- */
+
+.landingScrollCTA {
+    position: absolute;
+    top: calc(100vh - 200px);
+}
+
+.landingScrollCTA:after,
+.landingScrollCTA:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1rem;
+    width: 1rem;
+    border: 3px solid #fff;
+    border-color: transparent transparent #fff #fff;
+    rotate: -45deg;
+
+    animation: scrollDownIndicator 2s infinite;
+}
+.landingScrollCTA:before {
+    animation-delay: 300ms;
+}
+
+@keyframes scrollDownIndicator {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+    }
+    100% {
+        top: 3rem;
+        opacity: 0;
+    }
+}

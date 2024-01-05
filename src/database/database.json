@@ -1,0 +1,67 @@
+{
+    "projects": [
+        {
+            "id": "project-01",
+            "title": "CC Titles",
+            "description": "Generates titles with uniform sizes as comment for several languages.",
+            "source": "https://github.com/T-Tavares/Code-Comment-Titles",
+            "demo": "https://t-tavares.github.io/Code-Comment-Titles/",
+            "date": "04 Apr 2023"
+        },
+        {
+            "id": "project-02",
+            "title": "CRT Effect - Front End",
+            "description": "CRT old Tube Television effect.",
+            "source": "https://github.com/T-Tavares/CRT-Effect--Front-End",
+            "demo": "https://t-tavares.github.io/CRT-Effect--Front-End/",
+            "date": "25 Apr 2023"
+        },
+        {
+            "id": "project-03",
+            "title": "Email and Letter Automation",
+            "description": "GS automation project to send Emails and Create Letters from Data extracted from Google Sheets.",
+            "source": "https://github.com/T-Tavares/Email-and-Letter-Automation",
+            "date": "17 May 2023"
+        },
+        {
+            "id": "project-04",
+            "title": "Forkify - Udemy Course Project",
+            "description": "Project from Jonas Schemedtmann Udemy Javascript Course.",
+            "source": "https://github.com/T-Tavares/tavares-forkify-udemy-course",
+            "demo": "https://forkify-tavares.netlify.app/",
+            "date": "05 Jul 2023"
+        },
+        {
+            "id": "project-05",
+            "title": "Investment Calculator - Udemy Course Project",
+            "description": "Project from Maximilian Schwarzmüller Udemy React Course.",
+            "source": "https://github.com/T-Tavares/Investment-Calculator-Exercise",
+            "demo": "https://tavares-investment-calculator.netlify.app/",
+            "date": "21 Jul 2023"
+        },
+        {
+            "id": "project-06",
+            "title": "User Management - Udemy Course Project",
+            "description": "Project from Maximilian Schwarzmüller Udemy React Course.",
+            "source": "https://github.com/T-Tavares/user-management-feature",
+            "demo": "https://tavares-user-management-feature.netlify.app",
+            "date": "23 Jul 2023"
+        },
+        {
+            "id": "project-07",
+            "title": "Yaniv Score Tracker",
+            "description": "Score and Stats tracker for the game Yaniv.",
+            "source": "https://github.com/T-Tavares/yaniv-score-tracker",
+            "demo": "https://yaniv-score.netlify.app",
+            "date": "25 Aug 2023"
+        },
+        {
+            "id": "project-08",
+            "title": "Cesar Reynaux Website",
+            "description": "Website rework for the content creator Reynaux.",
+            "source": "https://github.com/T-Tavares/Reynaux--Content-Creator--Website",
+            "demo": "https://t-tavares.github.io/Reynaux--Content-Creator--Website/",
+            "date": "28 Nov 2023"
+        }
+    ]
+}

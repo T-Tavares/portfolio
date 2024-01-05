@@ -6,6 +6,9 @@
     /* --------------------- CSS COLOR VARIABLES ---------------------- */
 
     --dark-blue-black: #050518;
+    --mid-blue-black: #1a1a27;
+    --light-blue-black: #21212c;
+    --extra-light-blue-black: #2a2a36;
 
     --light-gray: #f0f0f0;
     --mid-gray: #d0d0d0;
@@ -14,6 +17,7 @@
     --white: #ffffff;
 
     --accent-blue: #003366;
+    --accent-blue-light: #005fbd;
 
     /* ---------------------- CSS FONT VARIABLES ---------------------- */
 
@@ -26,6 +30,10 @@
     --transition-short: 200ms ease-in-out;
     --transition-mid: 300ms ease-in-out;
     --transition-long: 400ms ease-in-out;
+
+    /* ---------------- CSS SIZING / SPACING VARIABLES ---------------- */
+
+    --sides-blank-area: 15vw;
 }
 
 /* -------------------------- CSS RESET --------------------------- */
@@ -38,17 +46,15 @@ body {
     box-sizing: border-box;
     height: 100%;
 }
+body ::selection {
+    background-color: var(--accent-blue);
+}
 
 button {
     border: none;
     background-color: transparent;
 }
 
-/* CSS GENERAL STYLING */
-
-body {
-    padding: 0 15%;
-}
 /* CSS THEME SETUP */
 
 body,

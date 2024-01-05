@@ -1,15 +1,9 @@
 /* ------------------ LAYOUT ------------------ */
 
 .navbar {
-    position: fixed;
-    top: 2rem;
-    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--extra-dark-gray);
 }
 
 /* ------------------- LOGO ------------------- */
