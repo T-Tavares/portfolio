@@ -8,17 +8,19 @@
 
 /* ------------------- LOGO ------------------- */
 
-.logo {
+.logo a {
     display: flex;
+    color: var(--light-gray);
+    text-decoration: none;
 }
-.logo h1 {
+.logo a h1 {
     font-size: 2rem;
     font-variant: small-caps;
     letter-spacing: 5px;
     font-weight: 200;
     transition: color 500ms ease-in-out;
 }
-.logo h1:hover {
+.logo a h1:hover {
     color: var(--white);
     font-weight: 400;
 }

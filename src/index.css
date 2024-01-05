@@ -59,7 +59,7 @@ button {
 
 body,
 button {
-    cursor: cell;
+    /* cursor: cell; */
     background: var(--dark-blue-black);
     color: var(--mid-gray);
     font-family: var(--font);

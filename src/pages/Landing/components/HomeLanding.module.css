@@ -58,6 +58,7 @@
 .landingScrollCTA {
     position: absolute;
     top: calc(100vh - 200px);
+    cursor: pointer;
 }
 
 .landingScrollCTA:after,

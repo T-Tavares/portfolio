@@ -1,12 +1,11 @@
 import style from './HomeLanding.module.css';
 import myImage from './../../../assets/images/profile-pic.jpg';
-import {useEffect, useState} from 'react';
 
 export default function HomeIntro() {
     const scrollDown = () => {
         window.scrollTo({top: window.innerHeight, behavior: 'smooth'});
     };
-
+    // TODO - APPLY LETTERS SCRUMBLING TO "TAVARES" SPAN
     return (
         <div className={style.landingContent}>
             <div className={style.landingText}>

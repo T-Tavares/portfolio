@@ -1,6 +1,8 @@
 import style from './Footer.module.css';
 import {FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 export default function Footer() {
+    // TODO - REWORK FOOTER ELEMENTS POSITIONING/COMPOSITION
+
     return (
         <footer id={style.footer}>
             <p>Made by Tavares</p>

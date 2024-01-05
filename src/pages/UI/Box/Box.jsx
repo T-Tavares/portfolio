@@ -1,4 +1,5 @@
 import style from './Box.module.css';
+import {Link} from 'react-router-dom';
 
 export default function Box({title, expandLabel, expandPath, type, className, children}) {
     const typeClass = type ? style[type] : style.section;
@@ -7,9 +8,9 @@ export default function Box({title, expandLabel, expandPath, type, className, ch
         <div className={`${style.box} ${className} ${typeClass}`}>
             {title && <h1 className={style.boxTitle}>{title}</h1>}
             {expandPath && (
-                <a href={expandPath} className={style.boxExpandBtn}>
+                <Link to={expandPath} className={style.boxExpandBtn}>
                     {expandLabel ? expandLabel : 'View All'}
-                </a>
+                </Link>
             )}
             {children}
         </div>

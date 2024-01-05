@@ -10,7 +10,7 @@ export default function Skills() {
         <Box
             title="Skills & Tools"
             expandLabel="View Curriculum"
-            expandPath="#curriculum"
+            expandPath="curriculum"
             className={style.skillsContainer}
         >
             <div className={style.skillCard}>

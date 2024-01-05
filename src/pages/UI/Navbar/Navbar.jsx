@@ -1,10 +1,10 @@
 import style from './Navbar.module.css';
-
+import { Link } from 'react-router-dom';
 // HELPERS 
 const characters = 'abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ0123456789+-=*/?#@!?-_'.split('')
 const getRandomLetter = () => characters[Math.floor(Math.random() * characters.length)]
 
-
+// TODO - REWORK NAVBAR TO MAKE IT POSITION FIXED 
 
 export default function Navbar() {
     // ---------------------------------------------------------------- //
@@ -47,12 +47,20 @@ export default function Navbar() {
     return (
         <>
             <nav className={style.navbar}>
-                <div className={style.logo}>{logo}</div>
+                <div className={style.logo}><Link to="/">{logo}</Link></div>
                 <ul>
-                    <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#home</button></li>
-                    <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#projects</button></li>
-                    <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#about</button></li>
-                    <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#contact</button></li>
+                    <Link to='/'>
+                        <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#home</button></li>
+                    </Link>
+                    <Link to='projects'>
+                        <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#projects</button></li>
+                    </Link>
+                    <Link to='about'>
+                        <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#about</button></li>
+                    </Link>
+                    <Link to='contact'>
+                        <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#contact</button></li>
+                    </Link>
                 </ul>
             </nav>
         </>
