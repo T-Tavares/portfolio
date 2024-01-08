@@ -2,6 +2,7 @@ import style from './HomeLanding.module.css';
 import myImage from './../../../assets/images/profile-pic.jpg';
 import {textScrambler} from '../../../helpers/textScrambler';
 
+// TODO - Make scroll button clicable out of arrows as well
 export default function HomeIntro() {
     const scrollDown = () => {
         window.scrollTo({top: window.innerHeight, behavior: 'smooth'});

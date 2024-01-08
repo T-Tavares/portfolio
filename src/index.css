@@ -75,3 +75,18 @@ button {
     font-size: var(--text-size);
     font-weight: var(--text-weight);
 }
+
+/* ---------------------------------------------------------------- */
+/* ------------------ TABLET AND MOBILE QUERIES ------------------- */
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    :root {
+        --sides-blank-area: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    :root {
+        --sides-blank-area: 0.5rem;
+    }
+}

@@ -103,3 +103,27 @@
         opacity: 0;
     }
 }
+
+/* ---------------------------------------------------------------- */
+/* ------------------ TABLET AND MOBILE QUERIES ------------------- */
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .landingContent {
+        flex-direction: column-reverse;
+    }
+    .landingText {
+        text-align: center;
+    }
+    .landingText p {
+        font-size: 6vw;
+    }
+    .landingText h1 {
+        font-size: 12vw;
+    }
+    .landingImage img {
+        --p-diameter: 70vw;
+        --min-diameter: 250px;
+        margin-bottom: 10vh;
+    }
+}

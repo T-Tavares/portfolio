@@ -9,7 +9,6 @@ import About from './pages/About/About';
 import Projects from './pages/UI/Projects/Projects';
 import Curriculum from './pages/Curriculum/Curriculum';
 import Contact from './pages/Contact/Contact';
-//  TODO - SET FAVICON
 
 function App() {
     //prettier-ignore

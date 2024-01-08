@@ -44,3 +44,21 @@
 .section {
     padding: 3rem;
 }
+
+/* ---------------------------------------------------------------- */
+/* ------------------ TABLET AND MOBILE QUERIES ------------------- */
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .boxTitle {
+        font-size: 1.2rem;
+        top: -1rem;
+    }
+    .boxExpandBtn {
+        font-size: 0.8rem;
+        top: -1.2rem;
+    }
+    .section {
+        padding: 2rem;
+    }
+}
