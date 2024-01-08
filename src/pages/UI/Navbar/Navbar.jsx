@@ -1,44 +1,16 @@
 import style from './Navbar.module.css';
+import { textScrambler } from '../../../helpers/textScrambler';
 import { Link } from 'react-router-dom';
-// HELPERS 
-const characters = 'abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ0123456789+-=*/?#@!?-_'.split('')
-const getRandomLetter = () => characters[Math.floor(Math.random() * characters.length)]
-
-// TODO - REWORK NAVBAR TO MAKE IT POSITION FIXED 
 
 export default function Navbar() {
-    // ---------------------------------------------------------------- //
     // -------------------- NAVBAR HOVER HANDLERS --------------------- //
-    // ---------------------------------------------------------------- //
 
     const mouseOver = e => (e.target.textContent = '>_' + e.target.textContent.slice(1));
     const mouseOut = e => (e.target.textContent = '#' + e.target.textContent.slice(2));
 
-    const logoScrambler = e => {
-        //  LOGO SCRAMBLES SETUP VARIABLES
-        let count = 0;
-        const repetitions = 10;
-        const delay = 200;
+    // ------------------- SCRAMBLED TEXT GENERATOR ------------------- //
 
-        // setInterval ID
-        const intervalID = setInterval(() => {
-
-            // This Function gets a random letter from the characters string
-            e.target.textContent = getRandomLetter() 
-
-            // If repetitions is reached the letter goes back to initial letter (saved as a dataset) and interval is cleared
-            if (++count === repetitions) {
-                e.target.textContent = e.target.dataset.letter
-                window.clearInterval(intervalID)
-            }
-        }, delay )
-    }
-
-    // ------------------------- LOGO RENDER -------------------------- //
-    // RENDER LOGO AS INDIVIDUAL H1 TAGS ( Necessary to apply the letter scramble effect)
-    const logo = 'Tavares'
-        .split('')
-        .map((letter, i) => <h1 key={`key-${i}`} data-letter={letter} onMouseOver={logoScrambler}>{letter}</h1>)
+    const logo = textScrambler('Tavares', style.logo)
 
     // ---------------------------------------------------------------- //
     // -------------------------- COMPONENT --------------------------- //
@@ -47,7 +19,7 @@ export default function Navbar() {
     return (
         <>
             <nav className={style.navbar}>
-                <div className={style.logo}><Link to="/">{logo}</Link></div>
+                <Link to="/">{logo}</Link>
                 <ul>
                     <Link to='/'>
                         <li><button onMouseOver={mouseOver} onMouseOut={mouseOut}>#home</button></li>

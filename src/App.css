@@ -2,15 +2,10 @@
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     grid-template-areas:
-        'nav'
+        'nav' /* Reserve top space for nav */
         'content'
         'footer';
     min-height: 100vh;
-}
-
-#nav {
-    grid-area: nav;
-    margin: auto var(--sides-blank-area);
 }
 
 #content {

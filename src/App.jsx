@@ -15,7 +15,7 @@ function App() {
     //prettier-ignore
     return (
         <div id="app">
-            <div id="nav"><Navbar /></div>
+            <Navbar />
             <div id="content">
                 <Routes>
                     <Route path='/' element={<Landing/>}/>

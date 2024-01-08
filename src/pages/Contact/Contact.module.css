@@ -1,0 +1,108 @@
+/* ---------------------------------------------------------------- */
+/* --------------------------- SOCIALS ---------------------------- */
+/* ---------------------------------------------------------------- */
+
+.socials {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+.socials a {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 1 100px;
+
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+
+    padding: 1rem;
+    color: var(--light-gray);
+    background-color: var(--light-blue-black);
+
+    transition: background-color 200ms ease-in-out;
+}
+.socials a svg {
+    font-size: 3rem;
+    transition: font-size 200ms ease-in-out;
+}
+.socials a p {
+    text-wrap: nowrap;
+    opacity: 0;
+    position: absolute;
+    bottom: -1.5rem;
+    font-size: 0.7rem;
+    transition: opacity 300ms ease-in-out;
+}
+/* --------------------- SOCIALS TRANSITIONS ---------------------- */
+
+.socials a:hover {
+    background-color: var(--extra-light-blue-black);
+}
+.socials a:hover svg {
+    font-size: 3rem;
+}
+.socials a:hover p {
+    opacity: 1;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------- FORM  ----------------------------- */
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------- RESET ----------------------------- */
+
+.form input,
+.form textarea {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0.8rem 0.5rem;
+}
+
+/* ---------------------------- FORM  ----------------------------- */
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    border-bottom: 1px solid var(--dark-gray);
+    caret-color: var(--light-gray);
+    color: var(--light-gray);
+}
+.form textarea {
+    caret-color: var(--light-gray);
+    resize: none;
+    color: var(--light-gray);
+}
+.form input:last-of-type {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    border: none;
+    background-color: var(--mid-blue-black);
+    border-radius: 8px;
+    cursor: pointer;
+    transition-property: color, background-color, letter-spacing, border-color;
+    transition: 200ms ease-in-out;
+}
+.form input:last-of-type:hover {
+    background-color: var(--light-blue-black);
+    color: var(--low-gray);
+    letter-spacing: 2px;
+}
+
+.form input.error,
+.form textarea.error {
+    background-color: #ff000045;
+    color: #fff;
+    transition: background-color 200ms ease-in-out;
+}

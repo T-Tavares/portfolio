@@ -11,7 +11,8 @@
     --extra-light-blue-black: #2a2a36;
 
     --light-gray: #f0f0f0;
-    --mid-gray: #d0d0d0;
+    --low-gray: #ddd;
+    --mid-gray: #bbbbbb;
     --dark-gray: #808080;
     --extra-dark-gray: #333;
     --white: #ffffff;
@@ -53,6 +54,9 @@ body ::selection {
 button {
     border: none;
     background-color: transparent;
+}
+a {
+    text-decoration: none;
 }
 
 /* CSS THEME SETUP */

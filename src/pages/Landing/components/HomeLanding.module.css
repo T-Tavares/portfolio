@@ -28,10 +28,17 @@
     font-variant: small-caps;
     font-weight: 500;
 }
-.landingText h1 span {
+
+.landingText div {
+    display: flex;
+}
+.scrambled {
+    display: flex;
+    margin-left: 1rem;
     color: var(--accent-blue-light);
 }
-.landingText h1 span::selection {
+
+.scrambled h1::selection {
     background-color: var(--light-gray);
     color: var(--accent-blue);
 }
