@@ -1,0 +1,66 @@
+.mobileNavClosed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 2rem 1.5rem;
+}
+.mobileNavClosed a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+.mobileLogo {
+    font-size: 2rem;
+    font-variant: small-caps;
+    letter-spacing: -10px;
+    font-weight: 200;
+    border-radius: 50%;
+    border: 1px solid var(--light-blue-black);
+    width: 42px;
+    height: 42px;
+}
+.openBtn {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+    z-index: 10;
+}
+.openBtn div {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: var(--dark-gray);
+}
+
+.navOpen {
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: #000000c1;
+    backdrop-filter: blur(10px);
+    list-style: none;
+
+    z-index: 10;
+}
+.navOpen a {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+}
+.navOpen button {
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1.5rem;
+}

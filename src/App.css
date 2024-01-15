@@ -19,3 +19,9 @@
     background-color: var(--mid-blue-black);
     padding: 0 var(--sides-blank-area);
 }
+
+@media (max-width: 900px) {
+    #app {
+        grid-template-rows: 40px 1fr 80px;
+    }
+}

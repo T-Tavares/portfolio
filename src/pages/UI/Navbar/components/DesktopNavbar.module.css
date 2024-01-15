@@ -1,0 +1,61 @@
+/* ------------------ LAYOUT ------------------ */
+
+.navbar {
+    width: calc(100vw - (var(--sides-blank-area) * 2));
+    padding: 1rem var(--sides-blank-area) 1.5rem var(--sides-blank-area);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: #05051899; */
+    background: linear-gradient(to bottom, #05051899 99%, transparent 99%);
+    /* border-bottom: 1px solid var(--light-blue-black); */
+    backdrop-filter: blur(10px);
+
+    z-index: 5;
+}
+
+/* ------------------- LOGO ------------------- */
+
+.logo {
+    background-color: transparent;
+    display: flex;
+    color: var(--light-gray);
+    text-decoration: none;
+}
+.logo h1 {
+    font-size: 2rem;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    font-weight: 200;
+    transition: color 500ms ease-in-out;
+}
+.logo h1:hover {
+    color: var(--white);
+    font-weight: 400;
+}
+
+/* --------------- NAVBAR LINKS --------------- */
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    min-width: 135px;
+    text-align: center;
+}
+.navbar ul li button {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    transition: color var(--transition-short);
+}
+
+.navbar ul li button:hover {
+    color: var(--white);
+    font-weight: 300;
+}

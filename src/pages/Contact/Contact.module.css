@@ -106,3 +106,19 @@
     color: #fff;
     transition: background-color 200ms ease-in-out;
 }
+
+@media (max-width: 900px) {
+    .socials {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .socials a {
+        flex: 0 1 20%;
+        padding: 0;
+    }
+    .socials a svg {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 400px) {
+}
