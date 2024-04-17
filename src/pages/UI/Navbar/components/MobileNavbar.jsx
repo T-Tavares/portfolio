@@ -48,6 +48,11 @@ export default function MobileNavbar() {
                         <button>#contact</button>
                     </li>
                 </Link>
+                <Link to="curriculum">
+                    <li>
+                        <button>#curriculum</button>
+                    </li>
+                </Link>
             </ul>
         );
     };

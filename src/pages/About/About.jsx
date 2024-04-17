@@ -1,6 +1,11 @@
 import Box from '../UI/Box/Box';
 import style from './About.module.css';
 
+import img1 from '../../assets/images/sculptures/digital--alien-01.jpg';
+import img2 from '../../assets/images/sculptures/digital--alien-02.jpg';
+import img3 from '../../assets/images/sculptures/traditional--minotaur.jpg';
+import img4 from '../../assets/images/sculptures/traditional--lioness.jpg';
+
 export default function About() {
     return (
         <Box title="About Me">
@@ -67,10 +72,10 @@ export default function About() {
                     <h3>Sculptures</h3>
                     <p>I've talked a few times about it, but I'll show you a bit of that part of my life/skills.</p>
                     <div className={style.gallery}>
-                        <img src="src/assets/images/sculptures/traditional--minotaur.jpg" alt="" />
-                        <img src="src/assets/images/sculptures/digital--alien-01.jpg" alt="" />
-                        <img src="src/assets/images/sculptures/traditional--lioness.jpg" alt="" />
-                        <img src="src/assets/images/sculptures/digital--alien-02.jpg" alt="" />
+                        <img src={img3} alt="Minotaur Sculpture" />
+                        <img src={img1} alt="Alien Sculpture" />
+                        <img src={img4} alt="Lioness Sculpture" />
+                        <img src={img2} alt="Alien Sculpture" />
                     </div>
                     <p>
                         I haven't given up on my artistic side; I just chose not to have it as my career. Instead, I
@@ -89,9 +94,9 @@ export default function About() {
                 <article>
                     <h3>Mission Ready</h3>
                     <p>
-                        I am in the middle of a Full Stack course (Web Development) at Mission Ready. And I am very
-                        grateful that I ended up there. It's been an intense and fun learning process with some amazing
-                        people. <br />
+                        I am in the middle of a Full Stack Accelerator course (Web Development) at Mission Ready. And I
+                        am very grateful that I ended up there. It's been an intense and fun learning process with some
+                        amazing people. <br />
                         <br />
                         After that, I want to gain some experience working and build my career as a Web Developer. And
                         eventually, I will pursue my own projects and software ideas.

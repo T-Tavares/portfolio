@@ -46,6 +46,13 @@ export default function DesktopNavbar() {
                         </button>
                     </li>
                 </Link>
+                <Link to="curriculum">
+                    <li>
+                        <button onMouseOver={mouseOver} onMouseOut={mouseOut}>
+                            #curriculum
+                        </button>
+                    </li>
+                </Link>
             </ul>
         </nav>
     );

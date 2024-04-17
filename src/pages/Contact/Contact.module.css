@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
 
-    flex: 0 1 100px;
+    flex: 0 1 1;
 
     aspect-ratio: 1/1;
 
@@ -30,7 +30,7 @@
     transition: background-color 200ms ease-in-out;
 }
 .socials a svg {
-    font-size: 3rem;
+    font-size: 2rem;
     transition: font-size 200ms ease-in-out;
 }
 .socials a p {
@@ -46,9 +46,7 @@
 .socials a:hover {
     background-color: var(--extra-light-blue-black);
 }
-.socials a:hover svg {
-    font-size: 3rem;
-}
+
 .socials a:hover p {
     opacity: 1;
 }
@@ -113,7 +111,7 @@
         gap: 0.5rem;
     }
     .socials a {
-        flex: 0 1 20%;
+        flex: 0 1 50px;
         padding: 0;
     }
     .socials a svg {

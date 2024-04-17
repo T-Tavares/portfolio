@@ -1,5 +1,5 @@
 import style from './HomeLanding.module.css';
-import myImage from './../../../assets/images/profile-pic.jpg';
+import myImage from '../../../assets/images/profile-pic.jpg';
 import {textScrambler} from '../../../helpers/textScrambler';
 
 // TODO - Make scroll button clicable out of arrows as well
@@ -21,7 +21,7 @@ export default function HomeIntro() {
                 <p>I'm a Web Developer</p>
             </div>
             <div className={style.landingImage}>
-                <img src={myImage} alt="" />
+                <img src={myImage} alt="Profile Image" />
             </div>
             <button onClick={scrollDown} className={style.landingScrollCTA}></button>
         </div>
