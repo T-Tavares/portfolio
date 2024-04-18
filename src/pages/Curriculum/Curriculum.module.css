@@ -1,5 +1,28 @@
-.curriculum {
+.curriculum div {
+    margin-bottom: 3rem;
 }
 .curriculum p {
     margin-bottom: 12px;
+}
+.cvBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cvButton {
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #ddd;
+    font-weight: 500;
+    border: 2px solid #ddd;
+    transition: 300ms ease-in-out;
+}
+.cvButton:hover {
+    background-color: #ccc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 500;
+    border: 2px solid #fff;
 }

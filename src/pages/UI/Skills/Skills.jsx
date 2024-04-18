@@ -19,6 +19,8 @@ import {
     SiJest,
     SiPuppeteer,
     SiGnubash,
+    SiJirasoftware,
+    SiTrello,
 } from 'react-icons/si';
 
 export default function Skills({expands}) {
@@ -64,7 +66,7 @@ export default function Skills({expands}) {
             </div>
             <div className={style.skillCard}>
                 <SiExpress className={style.icon} />
-                <h1 className={style.title}>Express JS</h1>
+                <h1 className={style.title}>Express</h1>
             </div>
             <div className={style.skillCard}>
                 <SiFirebase className={style.icon} />
@@ -92,7 +94,7 @@ export default function Skills({expands}) {
             </div>
             <div className={style.skillCard}>
                 <SiGithubactions className={style.icon} />
-                <h1 className={style.title}>Github Actions</h1>
+                <h1 className={style.title}>Actions</h1>
             </div>
             <div className={style.skillCard}>
                 <SiJest className={style.icon} />
@@ -109,6 +111,14 @@ export default function Skills({expands}) {
             <div className={style.skillCard}>
                 <SiVisualstudiocode className={style.icon} />
                 <h1 className={style.title}>VSCode</h1>
+            </div>
+            <div className={style.skillCard}>
+                <SiJirasoftware className={style.icon} />
+                <h1 className={style.title}>Jira</h1>
+            </div>
+            <div className={style.skillCard}>
+                <SiTrello className={style.icon} />
+                <h1 className={style.title}>Trello</h1>
             </div>
         </Box>
     );
