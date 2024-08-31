@@ -24,9 +24,11 @@ export default function Projects({title, amount, expandPath}) {
                 <a target="_blank" href={project.source} rel="noreferrer">
                     Source <MdOpenInBrowser />
                 </a>
-                <a target="_blank" href={project.demo} rel="noreferrer">
-                    Demo <MdOpenInBrowser />
-                </a>
+                {project.demo && (
+                    <a target="_blank" href={project.demo} rel="noreferrer">
+                        Demo <MdOpenInBrowser />
+                    </a>
+                )}
             </div>
         </Box>
     ));
