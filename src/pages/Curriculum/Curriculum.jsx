@@ -18,10 +18,9 @@ export default function Curriculum() {
                 </Box>
 
                 <Box title="What I can do for you">
-                    <p>Most of my relevant experience is from Mission Ready.</p>
                     <p>
-                        I've built front-end and back-end applications using Typescript, React, Next JS, Tailwind, SASS, NodeJS, Express
-                        JS, MongoDB and MySQL.
+                        I've built front-end and back-end applications using Vanilla Javascript, Typescript, Python, React, Next JS,
+                        Tailwind, SASS, NodeJS, Express JS, MongoDB and MySQL.
                     </p>
                     <p> Also had a good foundation on DevOps with Docker, and some Cloud experience with Google Cloud.</p>
                     <p>
