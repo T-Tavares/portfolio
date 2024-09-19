@@ -26,6 +26,15 @@
         grid-column: span 2;
     }
 }
+@media screen and (min-width: 1516px) {
+    /* 
+        Last project Box goes back to 
+        normal on very big screens 
+    */
+    .projectBox:last-of-type {
+        grid-column: span 1;
+    }
+}
 
 /* CARD BUTTONS  */
 

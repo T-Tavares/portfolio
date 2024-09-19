@@ -1,5 +1,6 @@
 import Box from '../UI/Box/Box';
 import style from './About.module.css';
+import {useEffect} from 'react';
 
 import img1 from '../../assets/images/sculptures/digital--alien-01.jpg';
 import img2 from '../../assets/images/sculptures/digital--alien-02.jpg';
@@ -7,6 +8,9 @@ import img3 from '../../assets/images/sculptures/traditional--minotaur.jpg';
 import img4 from '../../assets/images/sculptures/traditional--lioness.jpg';
 
 export default function About() {
+    // Scroll back to top on component mount
+    useEffect(() => window.scrollTo(0, 0), []);
+
     return (
         <Box title="About Me">
             <article className={style.articles}>

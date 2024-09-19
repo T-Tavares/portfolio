@@ -1,7 +1,7 @@
 import style from './Projects.module.css';
 import Box from '../Box/Box';
 import DB from '../../../database/database.json';
-
+import {useEffect} from 'react';
 import {MdOpenInBrowser} from 'react-icons/md';
 
 // HELPER FUNCTION - GET DATE TIMESTAMP
@@ -32,6 +32,9 @@ export default function Projects({title, amount, expandPath}) {
             </div>
         </Box>
     ));
+
+    // Scroll back to top on component mount
+    useEffect(() => window.scrollTo(0, 0), []);
 
     return (
         <Box title={title} className={style.latestProjectsContainer} expandPath={expandPath}>

@@ -3,6 +3,7 @@ import Box from '../UI/Box/Box';
 import emailjs from '@emailjs/browser';
 import {validateInput} from '../../helpers/emailInputValidation';
 import {FaLinkedin, FaInstagram, FaWhatsapp, FaGithub} from 'react-icons/fa';
+import {useEffect} from 'react';
 
 export default function Contact() {
     // ------------------------ EMAIL HANDLER ------------------------- //
@@ -41,6 +42,9 @@ export default function Contact() {
                 );
         }
     };
+
+    // Scroll back to top on component mount
+    useEffect(() => window.scrollTo(0, 0), []);
 
     return (
         <>
