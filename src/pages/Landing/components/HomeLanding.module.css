@@ -43,6 +43,10 @@
     color: var(--accent-blue);
 }
 
+.summary {
+    text-align: justify;
+}
+
 /* ------------------ HOME LANDING PROFILE IMAGE ------------------ */
 
 .landingImage img {

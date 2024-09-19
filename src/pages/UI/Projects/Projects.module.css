@@ -16,6 +16,17 @@
     padding: 1rem;
 }
 
+@media screen and (min-width: 737px) {
+    /* 
+        Last project Box occupy the whole 
+        screen size if grid falls to 2 
+        columns instead of 1  
+    */
+    .projectBox:last-of-type {
+        grid-column: span 2;
+    }
+}
+
 /* CARD BUTTONS  */
 
 .buttonContainer {

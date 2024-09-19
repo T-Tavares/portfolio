@@ -99,6 +99,22 @@
             "source": "https://github.com/T-Tavares/react-typescript-calendar",
             "demo": "https://react-typescript-calendar-pi.vercel.app/",
             "date": "31 Aug 2024"
+        },
+        {
+            "id": "project-14",
+            "title": "Batcheehe - Batch Calculator",
+            "description": "A simple batch calculator for cocktails that allows you to calculate the amount of ingredients you need to use based a random ingredient or total amount.",
+            "source": "https://github.com/T-Tavares/batcheeehe",
+            "demo": "https://batcheehe.vercel.app/",
+            "date": "07 Sep 2024"
+        },
+        {
+            "id": "project-15",
+            "title": "Coffeebara - Coffee Shop 3D Website Mockup",
+            "description": "I've wanted to try building a 3D website for a while now. And I've decided to build a Coffee Shop website mockup. I've used ThreeJS/React Three Fiber and Blender to build this project.",
+            "source": "https://github.com/T-Tavares/coffeebara",
+            "demo": "https://coffeebara.vercel.app/",
+            "date": "19 Sep 2024"
         }
     ]
 }
