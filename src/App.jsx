@@ -14,6 +14,7 @@ function App() {
     //prettier-ignore
     return (
         <div id="app">
+            <div id="modal"></div>
             <Navbar />
             <div id="content">
                 <Routes>

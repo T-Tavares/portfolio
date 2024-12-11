@@ -3,9 +3,12 @@ import Box from '../UI/Box/Box';
 import emailjs from '@emailjs/browser';
 import {validateInput} from '../../helpers/emailInputValidation';
 import {FaLinkedin, FaInstagram, FaWhatsapp, FaGithub} from 'react-icons/fa';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
+import Modal from '../UI/Modal/Modal';
 
 export default function Contact() {
+    const [sucessEmail, setSucessEmail] = useState(false);
+    const sucessEmailMsg = 'Your email was sent successfully!';
     // ------------------------ EMAIL HANDLER ------------------------- //
     const sendEmailHandler = e => {
         e.preventDefault();
@@ -22,8 +25,6 @@ export default function Contact() {
 
         // Will only send email if all the params fields have truthy values.
         if (!Object.values(params).includes(false)) {
-            console.log('pass!');
-
             // ------------------------ EmailJS MAGIC ------------------------- //
 
             emailjs
@@ -36,18 +37,25 @@ export default function Contact() {
                 .then(
                     result => {
                         formChildrenEl.forEach(el => (el.value = ''));
-                        console.log('SUCCESS', result.text);
+                        if (result.text === 'OK') setSucessEmail(true);
                     },
                     err => console.error('FAILED', err.text)
                 );
         }
     };
 
+    // ----------------- CLOSE MODAL HANDLER ---------------- //
+    const closeModal = () => setSucessEmail(false);
+
+    useEffect(() => {
+        setTimeout(() => setSucessEmail(true), 1000);
+    }, []);
     // Scroll back to top on component mount
     useEffect(() => window.scrollTo(0, 0), []);
 
     return (
         <>
+            <Modal isModalOpen={sucessEmail} closeModal={closeModal} title={sucessEmailMsg} />
             <Box title="Digital Places to Find Me" className={style.socials}>
                 <a href="https://www.linkedin.com/in/ttavaresf/" target="_blank">
                     <FaLinkedin />

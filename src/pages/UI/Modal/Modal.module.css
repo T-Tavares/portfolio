@@ -1,0 +1,60 @@
+/* ------------------ PORTAL ID STYLING ----------------- */
+
+:global(#modal) {
+    height: 100dvh;
+    width: 100dvw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------- MODAL STYLING ------------------- */
+
+.backdrop {
+    height: 100%;
+    width: 100%;
+    background-color: #00000050;
+    backdrop-filter: blur(5px);
+    z-index: 11;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background-color: #333;
+    padding: 2rem;
+    width: max(50%, 180px);
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.modal button {
+    padding: 5px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #555;
+    cursor: pointer;
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+.modal button:hover {
+    background-color: #555;
+    color: #fff;
+}
+.modal h2 {
+    font-weight: 400;
+    text-align: center;
+}
+.modal p {
+    font-weight: 200;
+    text-align: center;
+}

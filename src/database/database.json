@@ -115,6 +115,14 @@
             "source": "https://github.com/T-Tavares/coffeebara",
             "demo": "https://coffeebara.vercel.app/",
             "date": "19 Sep 2024"
+        },
+        {
+            "id": "project-16",
+            "title": "Code Titler - VSCode Extension",
+            "description": "That's a boost up on my initial project CC Titles. I've decided to build a VSCode Extension that generates titles with uniform sizes as comment for several languages directly on VSCode.",
+            "source": "https://github.com/T-Tavares/code-titler",
+            "demo": "https://marketplace.visualstudio.com/items?itemName=t-tavares.code-titler",
+            "date": "10 Dec 2024"
         }
     ]
 }
