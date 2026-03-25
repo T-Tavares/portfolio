@@ -21,6 +21,7 @@ import {
     SiGnubash,
     SiJirasoftware,
     SiTrello,
+    SiCplusplus,
 } from 'react-icons/si';
 
 export default function Skills({expands}) {
@@ -119,6 +120,10 @@ export default function Skills({expands}) {
             <div className={style.skillCard}>
                 <SiTrello className={style.icon} />
                 <h1 className={style.title}>Trello</h1>
+            </div>
+            <div className={style.skillCard}>
+                <SiCplusplus className={style.icon} />
+                <h1 className={style.title}>C++</h1>
             </div>
         </Box>
     );

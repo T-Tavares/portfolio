@@ -20,7 +20,7 @@ export default function About() {
 
                     <p>
                         Who are you? 🤪 <br />
-                        <br /> I am one of the many who decided to try life overseas. I came to New Zealand five years
+                        <br /> I am one of the many who decided to try life overseas. I came to New Zealand eight years
                         ago to study and learn English. Life happened in a way that I am now a resident here.
                         <br />
                         <br />
@@ -57,9 +57,16 @@ export default function About() {
                         me to give back to the same community that helped launch my tech career.
                         <br />
                         <br />
-                        Now, I'm diving deeper into Python while continuing to build projects in React. These projects
-                        and studies became more than just work. They're part of who I am and where I find real joy in
-                        exploring technology. I'm excited to see where this journey takes me next.
+                        A couple of years later, I joined Westpac as a Help Desk Support specialist, where I continue to
+                        work today. In this role, I've had the opportunity to explore adjacent technologies, building
+                        automations, small tools, and other practical solutions that improve workflows and productivity.
+                        I've learned a lot of VBA, PowerShell, and Power BI, and the role—and my managers—continue to
+                        surprise me with new and exciting challenges. I feel very fortunate to work with such a great
+                        team in a role that perfectly matches my curious and technical mindset.
+                        <br />
+                        <br />
+                        In my personal time, I'm currently learning C++ through personal projects and, more broadly,
+                        sailing through life as the good winds present themselves.
                     </p>
                 </article>
 
