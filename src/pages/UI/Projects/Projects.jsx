@@ -34,7 +34,15 @@ export default function Projects({title, amount, expandPath}) {
     ));
 
     // Scroll back to top on component mount
-    useEffect(() => window.scrollTo(0, 0), []);
+
+    useEffect(() => {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'auto',
+            });
+        });
+    }, []);
 
     return (
         <Box title={title} className={style.latestProjectsContainer} expandPath={expandPath}>

@@ -32,14 +32,14 @@ export default function Contact() {
                     import.meta.env.VITE_YOUR_SERVICE_ID,
                     import.meta.env.VITE_YOUR_TEMPLATE_ID,
                     params,
-                    import.meta.env.VITE_YOUR_PUBLIC_KEY
+                    import.meta.env.VITE_YOUR_PUBLIC_KEY,
                 )
                 .then(
                     result => {
                         formChildrenEl.forEach(el => (el.value = ''));
                         if (result.text === 'OK') setSucessEmail(true);
                     },
-                    err => console.error('FAILED', err.text)
+                    err => console.error('FAILED', err.text),
                 );
         }
     };
@@ -47,15 +47,27 @@ export default function Contact() {
     // ----------------- CLOSE MODAL HANDLER ---------------- //
     const closeModal = () => setSucessEmail(false);
 
-    useEffect(() => {
-        setTimeout(() => setSucessEmail(true), 1000);
-    }, []);
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setSucessEmail(true);
+    //     }, 1000);
+
+    //     return () => clearTimeout(timer);
+    // }, []);
+
     // Scroll back to top on component mount
-    useEffect(() => window.scrollTo(0, 0), []);
+    useEffect(() => {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'auto',
+            });
+        });
+    }, []);
 
     return (
         <>
-            <Modal isModalOpen={sucessEmail} closeModal={closeModal} title={sucessEmailMsg} />
+            {/* <Modal isModalOpen={sucessEmail} closeModal={closeModal} title={sucessEmailMsg} /> */}
             <Box title="Digital Places to Find Me" className={style.socials}>
                 <a href="https://www.linkedin.com/in/ttavaresf/" target="_blank">
                     <FaLinkedin />
@@ -74,7 +86,7 @@ export default function Contact() {
                     <p>T-Tavares</p>
                 </a>
             </Box>
-            <Box title="Send Me an Email">
+            {/* <Box title="Send Me an Email">
                 <form onSubmit={sendEmailHandler} className={style.form}>
                     <input type="text" name="user_name" placeholder="Your Name" autoComplete="off" />
                     <input type="email" name="user_email" placeholder="Your Email" autoComplete="off" />
@@ -83,7 +95,7 @@ export default function Contact() {
                     <textarea name="message" placeholder="Your Message" rows={5} autoComplete="off" />
                     <input type="submit" value="Send" />
                 </form>
-            </Box>
+            </Box> */}
         </>
     );
 }

@@ -8,18 +8,19 @@ export default function Navbar() {
 
 
     // --------------- NAVBAR MOBILE / DESKTOP TRIGGER ---------------- //
-    useEffect(()=> {
+    useEffect(() => {
         const isNavMobileHandler = () => {
-            window.innerWidth < 900 && setIsNavMobile(true)
-            window.innerWidth > 900 && setIsNavMobile(false)
-        }
-        window.addEventListener('load', isNavMobileHandler)
-        window.addEventListener('resize', isNavMobileHandler)
-        
-        // CleanUp function
-        return () => window.removeEventListener('resize', isNavMobileHandler)
+            setIsNavMobile(window.innerWidth < 900);
+        };
 
-    }, [])
+        // Set the initial state and listen for resizing
+        isNavMobileHandler();
+        window.addEventListener('resize', isNavMobileHandler);
+
+        return () => {
+            window.removeEventListener('resize', isNavMobileHandler);
+        };
+    }, []);
 
     // ---------------------------------------------------------------- //
     // -------------------------- COMPONENT --------------------------- //

@@ -4,7 +4,7 @@ import style from './HomeLanding.module.css';
 
 export default function ShortAbout() {
     return (
-        <Box title="A bit about me" expandLabel="More About Me" expandPath="/about">
+        <Box title="A Bit About Me" expandLabel="A Bit More" expandPath="/about">
             <p className={style.summary}>
                 I'm a curious and easy-going tech enthusiast who moved from Brazil to New Zealand eight years ago to
                 study English, and life has since led me to become a Permanent Resident.

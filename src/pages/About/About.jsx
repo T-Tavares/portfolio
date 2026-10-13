@@ -9,7 +9,14 @@ import img4 from '../../assets/images/sculptures/traditional--lioness.jpg';
 
 export default function About() {
     // Scroll back to top on component mount
-    useEffect(() => window.scrollTo(0, 0), []);
+    useEffect(() => {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'auto',
+            });
+        });
+    }, []);
 
     return (
         <Box title="About Me">
